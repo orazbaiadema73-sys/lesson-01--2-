@@ -13,11 +13,12 @@ export function ForgotPassword({ onBack, onSend }: Props) {
       <Text style={s.subtitle}>Введите номер телефона, чтобы восстановить доступ к аккаунту.</Text>
       <Text style={s.label}>Номер телефона</Text>
       <TextInput style={s.input} value={phone} onChangeText={setPhone}
-        placeholder="+7 (___) ___-__-__" keyboardType="phone-pad" />
+        placeholder="+7 (707) 430-16-70__" keyboardType="phone-pad" />
       <TouchableOpacity style={s.button} onPress={() => onSend(phone)}>
         <Text style={s.buttonText}>Отправить код</Text>
       </TouchableOpacity>
     </View>
+  
   );
 }
 const s = StyleSheet.create({
